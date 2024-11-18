@@ -1,0 +1,35 @@
+
+/* Word card styles */
+.word-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.word-card:hover {
+    transform: translateY(-5px);
+}
+
+.word-card h2 {
+    color: #1a73e8;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.word-card h3 {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    border-radius: 12px;
+    font-size: 0.8em;
+}

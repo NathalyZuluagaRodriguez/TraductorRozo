@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="board">
+        <header>
+            <h1>Traductor Interactivo</h1>
+        </header>
+        <main>
+            <aside>
+                <form class="frm-filters" action="">
+                    <fieldset>
+                        <label for="search-word">Buscar palabra:</label>
+                        <input type="text" id="search-word" placeholder="Ingrese una palabra">
+                    </fieldset>
+                    <fieldset>
+                        <label for="translation-direction">Dirección:</label>
+                        <select id="translation-direction">
+                            <option value="en-es">Inglés → Español</option>
+                            <option value="es-en">Español → Inglés</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="category-filter">Categoría:</label>
+                        <select id="category-filter">
+                            <option value="all">Todas las categorías</option>
+                            <option value="animals">Animales</option>
+                            <option value="fruits">Frutas</option>
+                            <option value="colors">Colores</option>
+                            <option value="physical_descriptions">Descripciones Físicas</option>
+                            <option value="skills">Habilidades</option>
+                            <option value="verbs">Verbos</option>
+                        </select>
+                    </fieldset>
+                    <button type="button" id="translate-btn">Traducir</button>
+                </form>
+                <section id="translation-result" class="translation-result">
+                    <h2>Resultado:</h2>
+                    <h3 id="translated-word">-</h3>
+                    <h4 id="example-text">-</h4>
+                </section>
+            </aside>
+            <section id="dictionary-container">
+                <!-- Iban las targetas -->
+            <div class="word-card">
+                <h2 id="englishTitle"></h2>
+                <h3 id="spanishTitle"></h3>
+                <span id="category-tag"></span>
+            </div>
+            </section>
+        </main>
+        x
+    </div>
+    <script type="module" src="scripts/app.js"></script>
+    <script type="module" src="scripts/dictionary.js"></script>
+</body>
+</html>
